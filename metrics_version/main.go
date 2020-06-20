@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 	"strconv"
-	"example/metrics"
+	"master/metrics"
 )
 
 func main(){
