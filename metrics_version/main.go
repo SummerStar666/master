@@ -18,7 +18,7 @@ func main(){
 		log.Fatal("ListenAndServe: ", err)
 	}
 }
-
+//处理数据并进行记录
 func index(w http.ResponseWriter, r *http.Request) {
 	timer:=metrics.NewAdmissionLatency()
 	metrics.RequestIncrease()
@@ -39,7 +39,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	}
 	timer.Observe()
 }
-
+//用于计算的函数
 func Compute(n int)int{
 	if n < 8{
 		return n%5
